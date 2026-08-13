@@ -8,3 +8,8 @@ let isstudent: boolean = true;
 //defining the strings
 
 let username: string = "rajkumarhere";
+
+
+//defining the numbers
+
+let population :number = 20;
