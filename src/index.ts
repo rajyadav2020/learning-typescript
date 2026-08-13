@@ -73,3 +73,28 @@ const user : {
 
 //now the ts knows what object exactly should contain
 
+
+
+//now writing the objects type again and again is offcourse very annoying 
+
+//so here comes the interface 
+
+//instead of 
+const user:{
+  name:string,
+  age:number,
+  email:string
+}
+
+//we can write 
+interface user {
+  name:string,
+  age:number,
+  email:string
+} //and then
+
+const user : User = {
+  name:"raj",
+  age:23,
+  email:"Ra"
+}
