@@ -133,3 +133,18 @@ interface User {
 }
 
 //so now if the object has either phone number or email this will not through the error as they are optional not mandatory
+
+
+//now comes the union types -- very important concept 
+
+
+//so imagine an api that can either have the id as string or in format of number so it can be declared as 
+
+let id : number|string;
+
+//why unions are usefull - this is useful when we are calling the apis 
+
+//can be represented as
+interface user {
+  id : number | string
+}
