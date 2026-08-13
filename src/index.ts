@@ -98,3 +98,22 @@ const user : User = {
   age:23,
   email:"Ra"
 }
+
+//so the interface feature of ts is so gaoted that this becomes the actual reason for api development
+
+
+//now declaring the functions in ts
+
+function add( a:number , b:number){
+  return a + b;
+}
+
+//this means a->number , b->number , return value -> should be a number
+
+function greet (name:string):string{
+  return 'heallo ji';
+}
+
+//arrow fxns in ts
+
+const add = (a:number,b:number) : number => a+b;
