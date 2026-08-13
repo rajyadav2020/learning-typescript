@@ -117,3 +117,19 @@ function greet (name:string):string{
 //arrow fxns in ts
 
 const add = (a:number,b:number) : number => a+b;
+
+
+
+//now comes the optional property of js 
+
+//suppose some user have their email to sign up while some have the phone number to sign up ,so in this case while defining the structure , we will be using the ? property
+
+interface User {
+  name:string,
+  age:number,
+  phone?: string,
+  email?:string,
+
+}
+
+//so now if the object has either phone number or email this will not through the error as they are optional not mandatory
