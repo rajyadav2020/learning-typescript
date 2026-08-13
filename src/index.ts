@@ -24,3 +24,35 @@ let age : number = 20;
 let age = 20 //here actually typescript automatically understands that age is offcourse a number , this is called the type inference
 
 
+
+//now coming to the const vs let
+
+//in js it is like 
+const position = 10
+position = 21 // works
+
+//but in ts things change 
+//the typescript works on top of js normall let and const 
+
+
+//now declaring the arrays
+
+//in js const numbers = [1,2,3,4]
+
+//ts can represent this as 
+const numbers: number[] = [1,2,3,4]; //this means that numbers is an array containing the numbers
+
+
+//strings array
+const names: string[] = [
+  "raj",
+  "amit",
+  "rahul"
+];
+
+//boooleans array
+const values : boolean[] = [
+  true,
+  false,
+  true
+]
