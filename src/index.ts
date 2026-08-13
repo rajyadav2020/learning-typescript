@@ -56,3 +56,20 @@ const values : boolean[] = [
   false,
   true
 ]
+
+//now comes the objects where ts becomes really helpful
+
+//here we can define the objects structure just like we define the schemas in models
+
+const user : {
+  name:string,
+  age:number,
+  email:string
+} = {
+  name :"raj",
+  age:34,
+  email:"rah"
+}
+
+//now the ts knows what object exactly should contain
+
