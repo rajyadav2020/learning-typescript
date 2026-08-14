@@ -148,3 +148,45 @@ let id : number|string;
 interface user {
   id : number | string
 }
+
+interface Product{
+  name:string,
+  price:number,
+  discounted?:boolean,
+  id: number|string
+}
+
+function formatProduct(product:Product) {
+  let priceText = product.discounted ? `$${product.price * 0.8}` : `$${product.price}`;
+  return `${product.name} (${product.id}): ${priceText}`;
+}
+
+type ApiResponse = 
+  | { status: "success"; data: string[] }
+  | { status: "error"; message: string };
+
+function handleResponse(response: ApiResponse) {
+  if(response.status === "success")
+    return response.data
+  else{
+    return response.message
+  }
+  
+}
+
+interface Character {
+  name: string;
+  health: number;
+}
+
+interface warrior extends Character{
+  melleedamage:number
+}
+interface mage extends Character{
+  mana:number
+}
+
+function attack(fighter:warrior)
+{
+  console.log(`${fighter.name} attacks for ${fighter.melleedamage} `)
+}
